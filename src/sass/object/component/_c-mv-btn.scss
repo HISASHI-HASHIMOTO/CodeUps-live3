@@ -1,0 +1,12 @@
+@use "global" as *;
+
+.c-mv-btn {
+  display: inline-block;
+  padding: rem(19) rem(70);
+  border: 1px solid $white;
+  font-size: rem(15);
+  line-height: 1;
+  letter-spacing: 0.05em;
+  font-family: $english-family;
+  border-radius: rem(50);
+}

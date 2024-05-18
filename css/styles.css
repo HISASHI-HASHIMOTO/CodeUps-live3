@@ -251,6 +251,19 @@ select::-ms-expand {
           transform: rotate(-45deg);
 }
 
+.c-mv-btn {
+  display: inline-block;
+  padding: 19px 70px;
+  padding: 1.1875rem 4.375rem;
+  border: 1px solid #fff;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 3.125rem;
+}
+
 .c-section-header {
   color: #391E88;
   text-align: center;
@@ -307,7 +320,7 @@ select::-ms-expand {
   letter-spacing: 0.05em;
 }
 
-.inner {
+.l-inner {
   width: 100%;
   padding-right: 20px;
   padding-left: 20px;
@@ -315,11 +328,16 @@ select::-ms-expand {
   margin-left: auto;
 }
 @media screen and (min-width: 768px) {
-  .inner {
+  .l-inner {
     max-width: 1150px;
     padding-right: 25px;
     padding-left: 25px;
   }
+}
+
+.l-news {
+  margin-top: 40px;
+  margin-top: 2.5rem;
 }
 
 .p-footer-nav__items {
@@ -346,8 +364,10 @@ select::-ms-expand {
 .p-header {
   height: 62px;
   height: 3.875rem;
-  background-color: #391E88;
+  background-color: transparent;
   z-index: 1000;
+  position: fixed;
+  width: 100%;
 }
 
 .p-header__inner {
@@ -380,7 +400,20 @@ select::-ms-expand {
 }
 
 .p-header__logo {
+  height: inherit;
+}
+
+.p-header__logo-link {
   color: #fff;
+  font-size: 18px;
+  font-size: 1.125rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: inherit;
 }
 
 .p-header__pc-nav {
@@ -392,6 +425,140 @@ select::-ms-expand {
     display: block;
     margin-left: auto;
   }
+}
+
+.p-mv {
+  position: relative;
+  height: 100vh;
+  background-image: url(../images/common/mv-sp.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.p-mv__header {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 20px;
+  left: 1.25rem;
+  color: #fff;
+}
+
+.p-mv__title {
+  font-size: 40px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.1;
+  letter-spacing: 0.05em;
+  color: #fff;
+}
+
+.p-mv__subtitle {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.8125;
+  letter-spacing: 0.1em;
+  margin-top: 20px;
+  margin-top: 1.25rem;
+}
+
+.p-mv__btn {
+  margin-top: 30px;
+  margin-top: 1.875rem;
+}
+
+.p-mv__scroll {
+  font-size: 12px;
+  font-size: 0.75rem;
+  color: #fff;
+  letter-spacing: 0.2em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  display: inline-block;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 80px;
+  bottom: 5rem;
+  right: 0px;
+  right: 0rem;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.p-mv__scroll span {
+  position: relative;
+}
+
+.p-mv__scroll span::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  width: 0.0625rem;
+  height: 50px;
+  height: 3.125rem;
+  background-color: #fff;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  bottom: -17.6px;
+  bottom: -1.1rem;
+  right: -35px;
+  right: -2.1875rem;
+}
+
+.p-news-content__meta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.p-news-content__date {
+  color: #111;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  letter-spacing: 0.1em;
+  line-height: 1.3;
+  font-family: "Montserrat", sans-serif;
+}
+
+.p-news-content__category {
+  font-size: 11px;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  border-radius: 50px;
+  line-height: 1;
+  background-color: #E8E8E8;
+  padding: 4px 18px;
+  padding: 0.25rem 1.125rem;
+  margin-left: 15px;
+  margin-left: 0.9375rem;
+}
+
+.p-news-content__link {
+  margin-top: 10px;
+  margin-top: 0.625rem;
+}
+
+.p-news-content__category-text {
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.9285714286;
+  letter-spacing: 0.05em;
+}
+
+.p-news__items {
+  margin-top: 32px;
+  margin-top: 2rem;
+}
+
+.p-news__item + .p-news__item {
+  margin-top: 32px;
+  margin-top: 2rem;
 }
 
 .pc-nav {
