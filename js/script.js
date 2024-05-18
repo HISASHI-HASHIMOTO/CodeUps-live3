@@ -24,15 +24,15 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   });
 
   //ドロワーメニュー
-  $("#MenuButton").click(function () {
-    // $(".l-drawer-menu").toggleClass("is-show");
-    // $(".p-drawer-menu").toggleClass("is-show");
-    $(".js-drawer-open").toggleClass("open");
-    $(".drawer-menu").toggleClass("open");
-    $("html").toggleClass("is-fixed");
-
+  $(".js-hamburger").click(function () {
+    if ($(".js-hamburger").hasClass("is-active")) {
+      $('.js-hamburger').removeClass("is-active");
+      $(".js-sp-nav").fadeOut();
+     } else {
+    $(".js-hamburger").addClass("is-active");
+    $(".js-sp-nav").fadeIn();
+  }
   });
-
 
 
   // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
@@ -46,5 +46,4 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     $('html,body').animate({ scrollTop: targetY }, time, 'swing');
     return false;
   });
-
 });

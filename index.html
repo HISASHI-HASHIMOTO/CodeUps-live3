@@ -30,8 +30,64 @@
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script defer src="./js/script.js"></script>
+    <script>
+      $(document).ready(function() {
+        console.log("jQuery is loaded and ready");
+      });
+    </script>
   </head>
   <body>
+
+    <header class="p-header l-header">
+      <div class="p-header__inner">
+        <h1 class="p-header__logo">
+          <a href="" class="p-header__log-link">CodeUps</a>
+        </h1>
+        <button class="p-header__drawer c-hamburger js-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="p-header__pc-nav pc-nav">
+          <ul class="pc-nav__items">
+            <l class="pc-nav__item">
+              <a href="">home</a></l
+              i>
+            <li class="pc-nav__item">
+              <a href="">news</a></l
+              i>
+            <li class="pc-nav__item">
+              <a href="">service</a>
+            </li>
+            <li class="pc-nav__item">
+              <a href="">works</a>
+            </li>
+            <li class="pc-nav__item">
+              <a href="">company</a>
+            </li>
+            <li class="pc-nav__item">
+              <a href="">recruit</a>
+            </li>
+            <li class="pc-nav__item">
+              <a href="">contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="p-header__sp-nav sp-nav js-sp-nav">
+          <ul class="sp-nav__items">
+            <li class="sp-nav__item"><a href="">home</a></li>
+            <li class="sp-nav__item"><a href="">news</a></li>
+            <li class="sp-nav__item"><a href="">service</a></li>
+            <li class="sp-nav__item"><a href="">works</a></li>
+            <li class="sp-nav__item"><a href="">company</a></li>
+            <li class="sp-nav__item"><a href="">recruit</a></li>
+            <li class="sp-nav__item"><a href="">contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
     <div class="inner">
       <div class="c-section-header">
         <h2 class="c-section-header__enbtitle">contact</h2>
@@ -39,5 +95,24 @@
       </div>
       <a class="c-button">more</a>
     </div>
+    <div class="l-footer p-footer">
+      <div class="p-footer__inner">
+        <nav class="p-footer__nav p-footer-nav">
+          <ul class="p-footer-nav__items">
+            <li class="p-footer-nav__item"><a href="">home</a></li>
+            <li class="p-footer-nav__item"><a href="">news</a></li>
+            <li class="p-footer-nav__item"><a href="">service</a></li>
+            <li class="p-footer-nav__item"><a href="">works</a></li>
+            <li class="p-footer-nav__item"><a href="">cpmpany</a></li>
+            <li class="p-footer-nav__item"><a href="">recruit</a></li>
+            <li class="p-footer-nav__item"><a href="">contact</a></li>
+          </ul>
+        </nav>
+        <div class="p-footer__copyright">
+          <small>&copy; CodeUps</small>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   </body>
 </html>
