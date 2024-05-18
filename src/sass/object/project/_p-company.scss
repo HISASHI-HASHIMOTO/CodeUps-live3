@@ -1,0 +1,42 @@
+@use "global" as *;
+
+.p-company {
+  padding-top: rem(32);
+  padding-bottom: rem(78);
+  background-image: url(../images/common/comapany-bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.p-company__contents {
+  margin-top: rem(30);
+}
+
+.p-company__subtitle {
+  text-align: center;
+  font-size: rem(32);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  line-height: calc(48/32);
+}
+.p-company__yellow {
+  background: linear-gradient(180deg, 
+  transparent 0%, 
+  transparent 75%,
+   #F5F534 50%, 
+   #F5F534 100%,
+   transparent 90%,
+   transparent 100%);
+}
+.p-company__text {
+  text-align: center;
+  font-size: rem(14);
+  margin-top: rem(40);
+  line-height: calc(25/14);
+}
+
+.p-company__btn {
+  margin-top: rem(30);
+  text-align: center;
+}

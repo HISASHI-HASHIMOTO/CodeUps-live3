@@ -46,4 +46,18 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     $('html,body').animate({ scrollTop: targetY }, time, 'swing');
     return false;
   });
+
+  // <!-- Initialize Swiper -->
+
+  var swiper = new Swiper(".js-works-swiper", {
+    pagination: {
+      el: ".js-works-pagination",
+    },
+    loop: true,
+    clickable: true,
+    autoplay: {
+      delay: 3000,
+    },
+  });
+
 });
