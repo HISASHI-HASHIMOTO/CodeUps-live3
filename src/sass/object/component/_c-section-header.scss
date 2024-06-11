@@ -4,6 +4,9 @@
   color: $blue;
   text-align: center;
 }
+.c-section-header.c-section-header--left {
+  text-align: left;
+}
 
 .c-section-header__entitle {
   font-size: rem(30);

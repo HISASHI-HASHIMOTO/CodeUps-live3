@@ -1,0 +1,27 @@
+@use "global" as *;
+
+
+.p-contact {
+  padding: rem(60) 0;
+  background-color: #F7F7F7;
+  @include mq(md) {
+   padding: rem(80) 0;
+  }
+}
+
+.p-contact__text-block {
+  margin-top: rem(30);
+  text-align: center;
+}
+
+.p-contact__text {
+  font-size: rem(14);
+  line-height: calc(25/14);
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+
+.p-contact__btn {
+  margin-top: rem(30);
+  text-align: center;
+}

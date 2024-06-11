@@ -2,8 +2,8 @@
 
 .p-header {
   height: rem(62);
-  background-color: transparent;
-  // background-color: #21054D;
+  // background-color: transparent;
+  background-color: #21054D;
   z-index: 1000;
   position: fixed;
   width: 100%;
@@ -47,4 +47,8 @@
    display: block;
    margin-left: auto;
   }
+}
+
+.p-header__sp-nav {
+  padding-top: rem(80);
 }
